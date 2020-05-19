@@ -1,56 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-	<meta charset="UTF-8">
-	<title>Desain logo. Identitas perusahaan.</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/rmk-aff-service" defer></script>
 </head>
-<img height="1" width="1" src="https://www.facebook.com/tr?id=2742384672649945&ev=Lead&noscript=1"/>
 <img height="1" width="1" src="https://www.facebook.com/tr?id=582776059254792&ev=Lead&noscript=1"/>
+<body>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
 
-	<body> 
-	<header>
-		<div class="hea">
-			<div class="sa">
-			
-		<a href="index.html"><h1 style="font-family: 'Kelly Slab', cursive;">Desain logo. Identitas perusahaan.</h1></a>
-		</div>
-	</header>
+        .success {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+        }
 
-	<section>
-		<div class="in">
-		<h2> SELAMAT! PESANAN ANDA DITERIMA! </h2><br>
-<p> Operator akan segera menghubungi Anda untuk mengkonfirmasi pesanan. </p><p>Silakan nyalakan
-                 nomor kontak Anda. <br></p>
+        .back-to-main {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            
+            border-radius: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all ease 2s;
+            color: #fff;
+        }
+
+        .block_success {
+            text-align: center;
+        }
+    </style>
+    <div class="wrap_block_success">
+        <div class="block_success">
+            <h2 class="congrats" style="font-family: 'Open Sans', sans-serif; ">CONGRATULATIONS! YOUR ORDER IS ACCEPTED!
+            </h2>
+            <p>&nbsp;</p>
+            <p class="success">
+                In the near future an operator will contact you to confirm the order. Please turn on your phone, our manager will contact you soon.</p>
+          
+        </div>
+    </div>
 
 
-		</section>
-       
 
-		<footer>
-		<div class="foo">
-		<p>Desain logo. Identitas perusahaan.</p>
-        <p>LOGO-K</p>
-        <p>
-        Kebijakan Pemrosesan Data Pribadi
-1. Ketentuan Umum <br>
-Kebijakan pemrosesan data pribadi ini disusun sesuai dengan persyaratan Undang-Undang Federal pada 07.27.2006. No. 152-ФЗ “Tentang Data Pribadi” dan menentukan prosedur untuk memproses data pribadi dan tindakan untuk memastikan keamanan data pribadi Brin Oleg Olegovich (selanjutnya disebut sebagai “Operator”). Situs
-Operator menetapkan sebagai tujuan dan kondisi terpentingnya untuk menjalankan kegiatannya dengan memperhatikan hak dan kebebasan manusia dan warga negara dalam pemrosesan data pribadinya, termasuk perlindungan hak atas privasi, rahasia pribadi dan keluarga.
-Kebijakan Operator ini mengenai pemrosesan data pribadi (selanjutnya - Kebijakan) berlaku untuk semua informasi yang Operator dapat terima tentang pengunjung ke situs web.
- 
-        </p>
-		</div>
-		</footer>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98208137-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-98208137-1');
-</script>
+    <img style="display:none" id="set_cookie" src="" />
 </body>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+.congrats {
+    font-size: 36px;
+    line-height: 44px;
+    color: #313e47;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a {
+    color: #69B9FF;
+}
+
+.wrap_block_success {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #aecbe2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.order_number {
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #424242;
+    line-height: 38px;
+    margin: 25px 0 25px 0;
+}
+
+.order_number span {
+    color: #e14740;
+}
+
+.url_more_info {
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    margin: 20px 0px;
+}
+
+.url_more_info:hover {
+    color: #e14740;
+}
+
+.block_success {
+    width: 960px;
+    max-width: 90%;
+    padding: 30px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+.success {
+    text-align: center;
+}
+
+@media (max-width:750px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .order_number {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:420px) {
+    .congrats {
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+
+
+
+
+.back-to-main {
+    position: relative;
+    display: inline-block;
+    font-size: 90%;
+    font-weight: 700;
+    color: rgb(209,209,217);
+    text-decoration: none;
+    text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+    padding: .5em 1em;
+    outline: none;
+    border-radius: 3px;
+    background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+    box-shadow:
+     0 1px rgba(255,255,255,.2) inset,
+     0 3px 5px rgba(0,1,6,.5),
+     0 0 1px 1px rgba(0,1,6,.2);
+    transition: .2s ease-in-out;
+  }
+  .back-to-main:hover:not(:active) {
+    background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+  }
+  .back-to-main:active {
+    top: 1px;
+    background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+    box-shadow:
+     0 0 1px rgba(0,0,0,.5) inset,
+     0 2px 3px rgba(0,0,0,.5) inset,
+     0 1px 1px rgba(255,255,255,.1);
+  }
+</style>
 </html>
